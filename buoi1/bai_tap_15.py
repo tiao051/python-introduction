@@ -1,0 +1,5 @@
+principal = float(input("Nhập số tiền gửi: "))
+interest_rate = float(input("Nhập lãi suất (%/năm): "))
+months = float(input("Nhập số tháng gửi: "))
+interest = principal * (interest_rate / 100) * (months / 12)
+print(f"Tiền lãi nhận được: {interest}")

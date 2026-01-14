@@ -1,0 +1,6 @@
+a = int(input("Nhập số thứ nhất: "))
+b = int(input("Nhập số thứ hai: "))
+print(f"Tổng: {a + b}")
+print(f"Hiệu: {a - b}")
+print(f"Tích: {a * b}")
+print(f"Thương: {a / b}")
