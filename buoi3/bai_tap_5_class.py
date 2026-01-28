@@ -81,7 +81,7 @@ class Student:
             if len(class_name) == 8:
                 raise ValueError("Format lớp sai cho chuyên ngành MMT")
         
-        class_number = class_name[7:9] if len(class_name) == 9 else class_name[6:8]
+        class_number = class_name[6:8]
         try:
             num = int(class_number)
             if num < 1 or num > 99:
