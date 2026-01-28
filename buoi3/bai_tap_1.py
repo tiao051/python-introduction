@@ -2,9 +2,21 @@ class Car:
     loai_xe = "Xe hơi"  
 
     def __init__(self, ten_xe, mau_sac, nguyen_lieu):
-        self.ten_xe = ten_xe
-        self.mau_sac = mau_sac
-        self.nguyen_lieu = nguyen_lieu
+        self._ten_xe = ten_xe
+        self._mau_sac = mau_sac
+        self._nguyen_lieu = nguyen_lieu
+
+    @property
+    def ten_xe(self):
+        return self._ten_xe
+    
+    @property
+    def mau_sac(self):
+        return self._mau_sac
+    
+    @property
+    def nguyen_lieu(self):
+        return self._nguyen_lieu
 
     def stop(self, reasons):
         return "Xe {} dừng lại vì {}.".format(self.ten_xe, reasons)

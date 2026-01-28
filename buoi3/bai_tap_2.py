@@ -1,7 +1,15 @@
 class Calculator:
     def __init__(self, a, b):
-        self.a = a
-        self.b = b
+        self._a = a
+        self._b = b
+
+    @property
+    def a(self):
+        return self._a
+    
+    @property
+    def b(self):
+        return self._b
 
     def add(self):
         return self.a + self.b
@@ -19,8 +27,8 @@ class Calculator:
             return "Error"
         
     def input_numbers(self):
-        self.a = float(input("Enter the first number: "))
-        self.b = float(input("Enter the second number: "))
+        self._a = float(input("Enter the first number: "))
+        self._b = float(input("Enter the second number: "))
 
     def show_numbers(self):
         print("First number: {}".format(self.a))
