@@ -11,6 +11,14 @@ class SubsetGenerator:
     def subsets(self):
         return self._subsets
     
+    @numbers.setter
+    def numbers(self, value):
+        self._numbers = value
+    
+    @subsets.setter
+    def subsets(self, value):
+        self._subsets = value
+    
     def f1(self):
         numbers_input = input("Nhập các số nguyên cách nhau bằng khoảng trắng: ")
         self._numbers = list(map(int, numbers_input.split()))

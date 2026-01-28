@@ -21,6 +21,26 @@ class Student:
     def class_name(self):
         return self._class
     
+    @student_id.setter
+    def student_id(self, value):
+        self._validate_student_id(value)
+        self._student_id = value
+    
+    @avg_score.setter
+    def avg_score(self, value):
+        self._validate_avg_score(value)
+        self._avg_score = float(value)
+    
+    @age.setter
+    def age(self, value):
+        self._validate_age(value)
+        self._age = int(value)
+    
+    @class_name.setter
+    def class_name(self, value):
+        self._validate_class(value)
+        self._class = value
+
     def _validate_student_id(self, student_id):
         if len(student_id) != 10:
             raise ValueError("Mã số sinh viên phải có 10 ký tự")

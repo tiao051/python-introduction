@@ -17,6 +17,18 @@ class Car:
     @property
     def nguyen_lieu(self):
         return self._nguyen_lieu
+    
+    @ten_xe.setter
+    def ten_xe(self, value):
+        self._ten_xe = value
+    
+    @mau_sac.setter
+    def mau_sac(self, value):
+        self._mau_sac = value
+    
+    @nguyen_lieu.setter
+    def nguyen_lieu(self, value):
+        self._nguyen_lieu = value
 
     def stop(self, reasons):
         return "Xe {} dừng lại vì {}.".format(self.ten_xe, reasons)

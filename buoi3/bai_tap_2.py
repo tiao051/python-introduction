@@ -10,6 +10,14 @@ class Calculator:
     @property
     def b(self):
         return self._b
+    
+    @a.setter
+    def a(self, value):
+        self._a = value
+    
+    @b.setter
+    def b(self, value):
+        self._b = value
 
     def add(self):
         return self.a + self.b

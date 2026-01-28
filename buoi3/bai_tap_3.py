@@ -10,6 +10,14 @@ class Rectangle:
     @property
     def width(self):
         return self._width
+    
+    @length.setter
+    def length(self, value):
+        self._length = value
+    
+    @width.setter
+    def width(self, value):
+        self._width = value
 
     def area(self):
         return self.length * self.width

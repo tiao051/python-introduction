@@ -18,6 +18,24 @@ class Triangle:
     def c(self):
         return self._c
     
+    @a.setter
+    def a(self, value):
+        if value <= 0:
+            raise ValueError("Cạnh phải lớn hơn 0")
+        self._a = value
+    
+    @b.setter
+    def b(self, value):
+        if value <= 0:
+            raise ValueError("Cạnh phải lớn hơn 0")
+        self._b = value
+    
+    @c.setter
+    def c(self, value):
+        if value <= 0:
+            raise ValueError("Cạnh phải lớn hơn 0")
+        self._c = value
+
     def _is_valid_triangle(self, a, b, c):
         if a + b <= c or a + c <= b or b + c <= a:
             raise ValueError("Không phải tam giác hợp lệ. Tổng 2 cạnh phải lớn hơn cạnh thứ 3")

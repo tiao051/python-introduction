@@ -6,6 +6,10 @@ class StringHandler:
     def string(self):
         return self._string
     
+    @string.setter
+    def string(self, value):
+        self._string = value
+    
     def get(self):
         self._string = input("Nhập một chuỗi: ")
     

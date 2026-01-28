@@ -18,6 +18,19 @@ class Person:
     def date_of_birth(self):
         return self._date_of_birth
     
+    @name.setter
+    def name(self, value):
+        self._name = value
+    
+    @country.setter
+    def country(self, value):
+        self._country = value
+    
+    @date_of_birth.setter
+    def date_of_birth(self, value):
+        self._validate_date(value)
+        self._date_of_birth = value
+
     def _validate_date(self, date_str):
         try:
             datetime.strptime(date_str, "%Y-%m-%d")

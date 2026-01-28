@@ -11,6 +11,14 @@ class ComplexNumber:
     def imag(self):
         return self._imag
     
+    @real.setter
+    def real(self, value):
+        self._real = value
+    
+    @imag.setter
+    def imag(self, value):
+        self._imag = value
+
     def inputComplex(self):
         while True:
             try:

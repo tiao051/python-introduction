@@ -8,6 +8,10 @@ class Circle:
     def radius(self):
         return self._radius
     
+    @radius.setter
+    def radius(self, value):
+        self._radius = value
+    
     def area(self):
         return math.pi * self.radius ** 2
     

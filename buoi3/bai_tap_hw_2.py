@@ -13,6 +13,16 @@ class Fraction:
     def denominator(self):
         return self._denominator
     
+    @numerator.setter
+    def numerator(self, value):
+        self._numerator = value
+    
+    @denominator.setter
+    def denominator(self, value):
+        if value == 0:
+            raise ValueError("Mẫu số không được bằng 0")
+        self._denominator = value
+
     def _greatest_common_divisor(self, a, b):
         a, b = abs(a), abs(b)
         while b:

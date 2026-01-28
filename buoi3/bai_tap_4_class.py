@@ -26,6 +26,26 @@ class Employee:
     def total_hours(self):
         return self._total_hours
     
+    @name.setter
+    def name(self, value):
+        self._name = value
+    
+    @age.setter
+    def age(self, value):
+        self._age = value
+    
+    @address.setter
+    def address(self, value):
+        self._address = value
+    
+    @salary.setter
+    def salary(self, value):
+        self._salary = value
+    
+    @total_hours.setter
+    def total_hours(self, value):
+        self._total_hours = value
+
     def inputInfo(self):
         self._name = input("Nhập tên nhân viên: ")
         self._age = int(input("Nhập tuổi: "))
