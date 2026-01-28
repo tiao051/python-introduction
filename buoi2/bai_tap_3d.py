@@ -1,5 +1,3 @@
-
-
 def find_row_with_max_sum(a):
     max_sum = float('-inf')
     max_row = -1

@@ -1,5 +1,3 @@
-
-
 def print_row(a):
     k = int(input("Nhập số dòng cần xuất (từ 1): "))
     k = k - 1  
